@@ -17,6 +17,6 @@ if __name__ == "__main__":
     
     # 3. Email the results to the user
     print("Step 3: Preparing email dispatch...")
-    user_email = "receiver_address@example.com"  # Change this to your test recipient address
+    user_email = os.getenv("RECIPIENT_EMAIL") #You can provide the recipient email in the .env file or hardcode it here
     
     send_news_email(recipient_email=user_email, email_content=ai_summary)

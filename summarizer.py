@@ -3,7 +3,7 @@ import os
 import json  # Added to format the dictionary cleanly
 from fetch_news import fetch_all_news
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 # Load env variables BEFORE initializing the LLM so it can find the key
 load_dotenv()

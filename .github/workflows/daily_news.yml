@@ -21,7 +21,6 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-        cache: 'pip' # Speeds up subsequent runs by caching dependencies
 
     # 3. Install project dependencies
     - name: Install dependencies
